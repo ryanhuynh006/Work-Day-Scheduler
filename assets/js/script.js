@@ -19,9 +19,6 @@ $(function () {
           // Get the hour from the id of the time block
           var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
-          // Remove all classes related to time (past, present, future)
-          //$(this).removeClass("past present future");
-
           // Add appropriate class based on the comparison of blockHour and currentHour
           if (blockHour < currentHour) {
               $(this).addClass("past");
